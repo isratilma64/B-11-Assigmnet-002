@@ -1,26 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 .quicksand-font {
     font-family: "Quicksand", serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
   }
+  *{
+    margin: 0 0;
+    padding: 0 0;
+  }
 
   :root{
     --orange:#FEA301;
-    --sky-blue: #01ACFD;
+    --sky-blue: #83cdf0;
     --black:#111111;
     --green-blue:#05D4DF;
     --purple:#5D58EF;
-
   }
+  .footer-clr{
+    color:#FFFFFF; 
+  background-color:#01ACFD ; }                                                     Q
+
+
+
   .font-clr{
     color: rgba(128, 128, 128, 1);
   }
 
   /* shared css style */
-
+  .button-clr{
+   background-color: rgba(149, 178, 38, 1);
+  }
   .common-container{
    max-width: 1160px;
    width: 100%;
@@ -211,6 +222,78 @@ width:100px ;
 display: block;
 margin: auto;
 }
+
+/* stories section */
+.our-stories{
+  background-image:url(../assets/bg.png), linear-gradient(to top,rgb(216, 188, 144),#FFFFFF);
+
+}
+.stories-container{
+ justify-content: space-between;
+ gap: 18px;
+}
+.stories{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 19px;
+}
+.card-story-1{
+  border-radius: 16px;
+  background-color: #FFFFFF;
+  width: 645px;
+
+
+}
+.story-1-img,.story-img{
+  border-top-left-radius:16px;
+  border-top-right-radius: 16px;
+  width: 100%;
+
+
+}
+.btn-story-1,.btn-story{
+  padding: 12px 20px;
+  border-radius: 48px;
+  background-color: var(--green-blue);
+  color: #FFFFFF;
+  border: none;
+  font-family: "Raleway", serif;
+  position: relative;
+  top: -21px;
+  left: 30px;
+  /* margin-bottom: 5px; */
+}
+
+.story-1-banner{
+  padding: 20px 38px;
+}
+.story-tittle{
+  padding: 0px 38px;
+margin-bottom: 30px;
+margin-top: 0;
+  font-size: 15px;
+ 
+ 
+}
+.story-1-tittle{
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+.story-button{
+  text-align: center;
+ padding-bottom: 60px;
+ padding-top: 60px;
+}
+.card-story-2{
+  border-radius: 16px;
+  background-color: #FFFFFF;
+ 
+}
+/* footer */
+.footer{
+  padding: 128px 140px ;
+}
+
  /* responsive for mobile */
  @media screen and (max-width: 576px) {
    .navbar{
@@ -270,5 +353,42 @@ margin: auto;
         width: 94px;
         height: 94px;
       }
+      .stories-container{
+        flex-direction: column;
+      }
+      .card-story-1{
+        display: none;
+      }
+      .btn-story-1,.btn-story{
+        padding: 8px 12px;
+        border-radius: 48px;
+        font-size: 0.6rem;
+     
+        top: -21px;
+        left: 15px;
+       
+      }
+     
+      .story-tittle{
+      padding: 0 15px;
+      font-size: 12px;
+     margin-bottom: 15px;
+      }
+   section{
+    margin: 12px 0px;
+   }
+   .story-button{
+    
+   padding-bottom: 10px;
+   padding-top: 30px;
+  }
+  .stories{
+ padding: 0 12px;
+    gap: 12px;
+  }
+  .stories-container{
+    
+    
+  }
 
  }
