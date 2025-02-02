@@ -13,7 +13,7 @@
 
   :root{
     --orange:#FEA301;
-    --sky-blue: #83cdf0;
+    --sky-blue: #01ACFD;
     --black:#111111;
     --green-blue:#05D4DF;
     --purple:#5D58EF;
@@ -146,7 +146,7 @@
   font-size: 1.1rem;
   font-weight: 700;
   border: none;
-  margin: 14px 0;
+  margin: 20px 0;
 }
 
 /* standard curriculum style */
@@ -164,6 +164,7 @@ padding: 40px 0 50px 0;
   font-size:2.8rem ;
   font-weight: 700;
   text-align: center;
+  margin-top: 40px;
 }
 .curri{
   display: flex;
@@ -292,8 +293,37 @@ margin-top: 0;
 /* footer */
 .footer{
   padding: 128px 140px ;
+  justify-content: space-between;
+  gap: 30px;
+ 
 }
+.f-img-tittle{
+align-items: center;  
+}
+.f-img-tittle img{
+  width: 80px;
+}
+.footer-tittle-1{
+font-size: 1.8rem;
+}
+.footer-des{
+ margin-top: 38px;
+ font-size: 1.1rem;
+ width: 600px;
+}
+.about-tittle{
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+.footer-link {
+  font-size: 1.1rem;
+  padding-top: 10px};
 
+.footer-img-icons img{
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
  /* responsive for mobile */
  @media screen and (max-width: 576px) {
    .navbar{
@@ -353,7 +383,7 @@ margin-top: 0;
         width: 94px;
         height: 94px;
       }
-      .stories-container{
+      .stories-container,.footer{
         flex-direction: column;
       }
       .card-story-1{
@@ -374,9 +404,7 @@ margin-top: 0;
       font-size: 12px;
      margin-bottom: 15px;
       }
-   section{
-    margin: 12px 0px;
-   }
+   
    .story-button{
     
    padding-bottom: 10px;
@@ -386,9 +414,28 @@ margin-top: 0;
  padding: 0 12px;
     gap: 12px;
   }
-  .stories-container{
-    
-    
+ .footer{
+    padding: 80px 20px ;
+    gap: 30px;
   }
+  .f-img-tittle img{
+    width: 50px;
+  
+  }
+  .footer-tittle-1{
+  font-size: 1.1rem;
+  }
+  .footer-des{
+   width: 350px ;
+   font-size: 0.9rem;
+   margin-top: 20px;
+  }
+  .about-tittle{
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  .footer-link {
+    font-size: 0.9rem;
+    padding-top: 5px};
 
  }
