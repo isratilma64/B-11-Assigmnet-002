@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.quicksand-font {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  :root{
+    --orange:#FEA301;
+    --sky-blue: #01ACFD;
+    --black:#111111;
+    --green-blue:#05D4DF;
+    --purple:#5D58EF;
+
+  }
+  .font-clr{
+    color: rgba(128, 128, 128, 1);
+  }
+
+  /* shared css style */
+
+  .common-container{
+   max-width: 1160px;
+   width: 100%;
+   margin: 0 auto;
+  }
+  .display-flex{
+    display: flex;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+   li{
+    list-style: none;
+   }
+ 
+
+  /* navbar */
+  .navbar{
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+  .logo-name{
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 10px 0;
+    margin-left: 10px;
+
+
+  }
+
+  .nav-link{
+   
+    font-size: 20px;
+    margin: 16px 0;
+    margin-right: 32px;
+    
+  }
+  .link-icon-1{
+    color: var(--orange);
+    font-weight:700;
+  }
+  .link-icon-2{
+    color: var(--sky-blue);
+    font-weight:500;
+  }
+  .link-icon-3{
+    color: var(--green-blue);
+    font-weight:500;
+  }
+  .link-icon-4{
+    color: var(--purple);
+    font-weight:500;
+  }
+  .nav-button{
+    width: 197px;
+    height: 50px;
+    border-radius: 12px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: var(--orange);
+    border: none;
+  }
+ 
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .hamburger div {
+    width: 30px;
+    height: 2px;
+    background-color:var(--orange);
+    margin: 5px;
+    transition: 0.3s;
+  }
+
+/* banner section style */
+.banner{
+    justify-content: space-between;
+    gap: 50px;
+}
+.banner-details{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+ .banner-image img{
+    width: 100%;
+  }
+.banner-tittle{
+  font-size: 56px;
+  font-weight: 500px;  
+  margin: 14px 0;
+  
+}
+#Empowering{
+    color: var(--orange);
+}
+#vision{
+    color: var(--sky-blue);
+}
+.btn-common{
+ padding: 15px 35px;
+  background-color: #111111;
+  color: white;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border: none;
+  margin: 14px 0;
+}
+
+/* standard curriculum style */
+.standard-curriculum{
+  background-image: url(../assets/bg.png);
+  background-size: cover;
+  
+}
+.curricutams-container{
+  justify-content: space-between;
+  gap: 28px;
+}
+.section-tittle{
+padding: 40px 0 50px 0;
+  font-size:2.8rem ;
+  font-weight: 700;
+  text-align: center;
+}
+.curri{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+ 
+  width:368px ;
+  height: 450px;
+  border-radius: 18.86px;
+  box-shadow: 4px 4px 23.3px rgba(0, 0, 0, 0.05);
+}
+.curriculam-1{
+ 
+  background: linear-gradient(to bottom ,rgb(222, 239, 247),#ffffff);
+}
+.curriculam-2{
+
+  background: linear-gradient(to bottom,rgba(255, 244, 220, 1),#ffffff);
+}
+.curriculam-3{
+ 
+  background: linear-gradient(to bottom, #e5d0ff, #ffffff);
+
+}
+
+.curriculam-img {
+  width: 120px;
+  height: 120px;
+}
+.curriculam-tittle{
+ font-size:1.5rem;
+
+}
+.read-more-1{
+  font-size: 15px;
+  color:rgba(100, 200, 255, 1) ;
+  font-size: bold;
+}
+.read-more-2{
+  font-size: 15px;
+  color:rgba(240, 170, 0, 1);
+  font-size: bold;
+}
+.read-more-3{
+  font-size: 15px;
+  color:rgba(135, 0, 255, 1);
+  font-size: bold;
+}
+.icon{
+ margin-top: 30px;
+ margin-bottom: 10px;
+}
+.icon-bar {
+width:100px ;
+display: block;
+margin: auto;
+}
+ /* responsive for mobile */
+ @media screen and (max-width: 576px) {
+   .navbar{
+   
+   border-bottom: 1px solid var(--orange);
+   }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 80px;
+        left: 0;
+     
+        text-align: center;
+        padding: 10px 0;
+      
+      }
+    
+      .nav-links.active {
+        display: flex;
+      }
+    
+      .hamburger {
+        display: flex;
+      }
+      .banner{
+        flex-direction: column-reverse;
+        margin: 20px;
+        gap: 20px;
+      }
+      .banner-details{
+       text-align: center;
+      
+      }
+      .banner-tittle{
+        font-size: 36px;
+       }
+       .section-tittle{
+        padding: 20px 0;
+        font-size:1.8rem ;
+         
+        }
+       .curricutams-container{
+        flex-direction: column;
+        gap:5px;
+        align-items: center;
+       }
+       .icon-bar {
+        display: none;
+       }
+       .curri{
+        width:350px ;
+        height: 400px;       
+      }
+      .curriculam-img {
+        width: 94px;
+        height: 94px;
+      }
+
+ }

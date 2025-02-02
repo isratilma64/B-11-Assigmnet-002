@@ -4,8 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kinds school</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <style>
+      section{
+        margin-top: 60px;
+        margin-bottom: 60px;
+      }
+    </style>
 </head>
-<body>
-    
+<body class="quicksand-font">
+    <header class="common-container">
+  <!-- navbar -->
+    <nav class="navbar display-flex " >
+          <div class="nav-logo display-flex">
+   <img src="./assets/logo.png" alt="">
+   <h3 class="logo-name">SCHOOL</h3>
+          </div>
+          <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="nav-links display-flex">
+            <li class="nav-link"><a href="" class="link-icon-1">Home</a></li>
+            <li class="nav-link"><a href="" class="link-icon-2">About</a></li>
+            <li class="nav-link"><a href="" class="link-icon-3">Facilities</a></li>
+            <li class="nav-link"><a href="" class="link-icon-4">Admission</a></li>
+          </div>
+          <div class="nav-contact nav-links">
+          <button class="nav-button">Contact</button>
+          </div>
+        </nav>
+
+<!-- banner section -->
+    <div class="banner display-flex">
+        <div class="banner-details">
+           <div>
+            <h1 class="banner-tittle"><span id="Empowering">Empowering</span><br>
+              students from small <br> age <span id="vision">towards vision</span></h1>
+              <p class="banner-description">With the courage, Confidence, Creativity and Compassion to make their Unique Contribution in a Diverse and Dynamic World.</p>
+      <button class="btn-common">Enroll Now</button>
+           </div>
+            </div>
+        <div class="banner-image">
+            <img src="./assets/hero-kids.png" alt="">
+        </div>
+      </div>
+    </header>
+    <main class="common-container">
+        <section class="standard-curriculum">
+          <h1 class="section-tittle">Standard Curriculum</h1>
+          <div class="curricutams-container display-flex">
+            <div class="curri curriculam-1">
+              <div>
+                <img src="./assets/kinder.png" alt="" class="curriculam-img">
+              <h3 class="curriculam-tittle">Kinder (3-6) Years</h3>
+              <p class="curriculam-des font-clr">Cum sociis natoque penatibus et magnis
+                dis parturient montes, nascetur ridiculus
+                mu sdis parturient</p>
+              <h6 class="read-more-1">Read More</h6>
+              </div>
+            </div>
+            <div class=" curri curriculam-2">
+            <div>
+              <img src="./assets/elementary.png" alt="" class="curriculam-img">
+              <h3 class="curriculam-tittle ">Elementary School</h3>
+              <p class="curriculam-des font-clr">Cum sociis natoque penatibus et magnis
+                dis parturient montes, nascetur ridiculus
+                mu sdis parturient</p>
+              <h6 class="read-more-2">Read More</h6>
+            </div>
+            </div>
+            <div class=" curri curriculam-3">
+              <div>
+                <img src="./assets/middle.png" alt="" class="curriculam-img">
+              <h3 class="curriculam-tittle ">Middle (10-16) Years</h3>
+              <p class="curriculam-des font-clr">Cum sociis natoque penatibus et magnis
+                dis parturient montes, nascetur ridiculus
+                mu sdis parturient</p>
+              <h6 class="read-more-3">Read More</h6>
+              </div>
+            </div>
+          </div>
+
+        
+           <div class="icon">
+            <img class="icon-bar"  src="./assets/icon.png" alt="">
+           </div>
+        
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script>
+        function toggleMenu() {
+  document.querySelector(".nav-links").classList.toggle("active");
+}
+
+    </script>
 </body>
 </html>
